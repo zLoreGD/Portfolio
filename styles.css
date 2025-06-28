@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* Don't set overflow-y unless necessary */
+}
+
+a{
+    text-decoration: none;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it's on top of other content */
+}
+
+.ellipse-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+    overflow-y: visible;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* So it doesn't interfere with clicks */
+}
+
+.page__content{
+    width:80%;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding-top: 100px;
+}
+body{
+    background-color: #0B0C10;
+
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: "K2D", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:White;
+
+}
+h2{
+      font-family: "K2D", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size:xx-large;
+  color:white;
+}
+p{
+    
+    font-family: "K2D", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:x-large;
+    color:rgba(197, 198, 199, 0.84);
+
+}
+.name{
+    font-weight: 800;
+    color:#66FCF1;
+    font-style:italic;
+    transition:0.3s ease-in-out;
+}
+.name:hover{
+    font-size:35px;
+    transition:0.3s ease-in-out;
+}
+.header__list{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(20, 22, 30, 0.69);
+    list-style: none;
+    padding:20px;
+    margin-bottom:50px;
+}
+h3{
+    font-family: "K2D", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size:xx-large;
+    color:white;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+
+}
+h3:hover{
+    
+    color:#66FCF1;
+    transition: 0.4s ease-in-out;
+}
+
+.button{
+    border:#66FCF1 3px solid;
+    border-radius: 5px;
+    font-family: "K2D", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size:xx-large;
+    color:white;
+    padding:10px 10px;
+    display: inline-block;
+    text-align: center;
+    transition:0.5s ease-in-out;
+}
+.button:hover{
+    font-weight: 800;
+    transition:0.5s ease-in-out;
+    background-color:#66FCF1;
+    border: white 3px solid;
+    padding: 15px 15px;
+}
+.description{
+    display: flex;
+    margin-top:10px;
+    gap:50px;
+}
+.description__text{
+    width:50%;
+    align-items:center;
+    
+}
+.intro__text{
+    font-family: "K2D", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color:white;
+}
+.description__img{
+    align-items:right;
+    margin:0 auto;
+}
+hr{
+    color:white;
+    border: 2px solid white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.bold_w{
+    color:White;
+}
+.bold_wi{
+    color:white;
+    font-style: italic;
+}
+.button__page{
+    margin-top:50px;
+    margin-bottom:80px;
+    text-align: center;
+
+}
+.specialitate{
+    color:#66FCF1;
+    font-style:italic;
+    font-weight: 400;
+}
+.presentation1{
+    text-align: center;
+}
+.site__image{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Ellipse 3 */
+.ellipse1{
+position: absolute;
+
+width: 677px;
+height: 677px;
+left: -338px;
+top: 2px;
+z-index: -2;
+background: rgba(69, 162, 158, 0.85);
+filter: blur(400px);
+}
+.ellipse2{
+    /* Ellipse 2 */
+
+position: absolute;
+width: 677px;
+height: 677px;
+left: 1164px;
+top: 494px;
+z-index:-2;
+background: rgba(69, 162, 158, 0.85);
+filter: blur(400px);
+
+}
+.secondary__hr{
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+    justify-content: center;
+    border-radius:4px;
+    border:#45A29E 2px solid;
+}
+.cards{
+    display:flex;
+    justify-content: center;
+    margin:30px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    max-width: 300px;
+    background-color: rgba(18, 20, 28, 1);
+    border:#45A29E 3px solid;
+    padding:20px 20px;
+    margin:50px 50px;
+    border-radius:10px;
+}
+.play{
+    background-color: #66FCF1;
+  color: black;
+  font-family: "K2D", sans-serif;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mus__desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mus__text{
+    width:50%;
+}
+.mus__card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:20px 20px;
+    gap:20px;
+}
+/* 1. Base styles already in place */
+/* We'll now add responsive layout using media queries */
+
+/* Make sure images and containers don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  background-color: rgba(20, 22, 30, 1);
+  padding: 20px;
+  margin-top: auto;
+  width: 100%;
+}
+/* Flex containers should wrap for smaller screens */
+.description,
+.cards,
+.mus__desc {
+  flex-wrap: wrap;
+}
+
+/* Center .site__image on all screen sizes */
+.site__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text and image columns in .description stack vertically */
+@media (max-width: 768px) {
+  .description,
+  .mus__desc {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .description__text,
+  .mus__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .description__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    margin: 20px 0;
+    max-width: 90%;
+  }
+
+  .header__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header {
+    position: relative; /* Avoid covering content on small screens */
+  }
+
+  .page__content {
+    padding-top: 40px; /* Reduced padding since header isn't fixed */
+  }
+
+  .play {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  h1.intro__text {
+    font-size: 32px;
+  }
+
+  h2, h3, p {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .site__image {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1.intro__text {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .header__list {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}
+
+.eu{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-top:100px;
+    align-items: center;
+}
+.eu__desc{
+    margin-left:100px;
+    margin-right:100px;
+
+    background-color: #12141C;
+    border:3px #45A29E solid;
+    border-radius: 5px;
+    padding:20px;
+}
+.eu hr{
+    width:70%;
+    border-radius:5px;
+}
+.eu h1{
+    margin-bottom:50px;
+}
+.eu__desc{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+}
